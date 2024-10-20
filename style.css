@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: "Arima", sans-serif;
+}
+.grid {
+    transform: scale(2);
+    display: grid;
+    grid-template-columns: repeat(16, 10px);
+    grid-template-rows: repeat(16, 10px);
+    gap: 1px;
+}
+.cell {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+.cell.active {
+    background-color: black;
+}
+
+#predicted {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+}
